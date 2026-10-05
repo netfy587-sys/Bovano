@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bovano</title>
+<style>
+:root{--bg:#f4f8fc;--card:#fff;--ink:#12283d;--mute:#4d6479;--acc:#1b63a5;--line:#d9e5f0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1824;--card:#142435;--ink:#e8f1f9;--mute:#9bb3c7;--acc:#6db3f2;--line:#223a52}}
+:root[data-theme="dark"]{--bg:#0d1824;--card:#142435;--ink:#e8f1f9;--mute:#9bb3c7;--acc:#6db3f2;--line:#223a52}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Georgia,"Times New Roman",serif}
+.w{max-width:1000px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font:600 15px system-ui,sans-serif}
+.logo{font:700 26px Georgia,serif;color:var(--acc)}
+nav a{color:var(--mute);text-decoration:none;margin-left:18px}
+.hero{padding:70px 0 50px;text-align:center}
+.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.15;margin:0 0 18px}
+.hero p{max-width:660px;margin:0 auto 20px;color:var(--mute)}
+.btn{display:inline-block;background:var(--acc);color:var(--bg);padding:13px 28px;border-radius:8px;text-decoration:none;font:600 16px system-ui,sans-serif;margin:4px}
+.btn.o{background:transparent;color:var(--acc);border:2px solid var(--acc)}
+h2{font-size:30px;margin:0 0 8px}
+.sub{color:var(--mute);margin:0 0 28px}
+section{padding:44px 0;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.c,.art,.step,details{background:var(--card);border:1px solid var(--line);border-radius:12px}
+.c{padding:22px}.c h3{margin:0 0 6px;font-size:19px}.c p{margin:0;color:var(--mute);font-size:15.5px}
+.n,.tag{font:700 12px system-ui,sans-serif;color:var(--acc);letter-spacing:1px;text-transform:uppercase;display:block;margin-bottom:6px}
+.steps{counter-reset:s;display:grid;gap:14px}
+.step{display:flex;gap:16px;padding:20px}
+.step:before{counter-increment:s;content:counter(s);flex:none;width:36px;height:36px;border-radius:50%;background:var(--acc);color:var(--bg);display:grid;place-items:center;font:700 16px system-ui,sans-serif}
+.step h3{margin:0 0 4px;font-size:18px}.step p{margin:0;color:var(--mute);font-size:15.5px}
+.art{padding:26px;margin-bottom:16px;border-left:4px solid var(--acc)}
+.art h3{margin:4px 0 10px;font-size:22px}.art p{margin:0 0 10px;color:var(--mute)}
+details{padding:16px 20px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}details p{margin:10px 0 0;color:var(--mute);font-size:16px}
+dl{margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px 28px}
+dt{font-weight:700;color:var(--acc)}dd{margin:0 0 6px;color:var(--mute);font-size:15.5px}
+.note{text-align:center;color:var(--mute)}.note b{color:var(--ink)}
+footer{padding:34px 0;border-top:1px solid var(--line);text-align:center;color:var(--mute);font:14px system-ui,sans-serif}
+</style>
+</head>
+<body>
+<div class="w">
+<nav><span class="logo">Bovano</span><div><a href="#features">Overview</a><a href="#articles">Reading room</a><a href="#glossary">Glossary</a></div></nav>
+
+<header class="hero">
+<h1>Experience excellence without compromise.</h1>
+<p>Bovano is an Online Adventures Platform for reading and learning about our world: its maps, its time zones, its wild places and the best ways to travel through it.</p>
+<p style="font-weight:700;color:var(--acc)">Click. Discover. Enjoy.</p>
+<a class="btn" href="#articles">Begin Your Journey</a>
+</header>
+
+<section id="about">
+<h2>About Bovano</h2>
+<p class="sub">Discover the perfect blend of quality and value.</p>
+<p>We are a well-respected voice for clear, careful writing about geography, nature and travel. Every lesson is short, accurate and written for readers of any age. <b>Anytime, Anywhere, Anything</b> you want to know about the world, you can start with a single page.</p>
+</section>
+
+<section id="features">
+<h2>Why Bovano</h2>
+<p class="sub">Twelve ideas that shape how we write and teach.</p>
+<div class="grid">
+<div class="c"><span class="n">01</span><h3>Simple Signup, Instant Access</h3><p>Join the reading list in moments and open any lesson straight away.</p></div>
+<div class="c"><span class="n">02</span><h3>Designed for Everyday Fun</h3><p>Map puzzles and short quizzes make geography enjoyable at any age.</p></div>
+<div class="c"><span class="n">03</span><h3>Enjoy Anytime, Anywhere</h3><p>Short readings fit a commute, a break or a quiet evening at home.</p></div>
+<div class="c"><span class="n">04</span><h3>Entertainment Without Limits</h3><p>From deserts to deep oceans, no region of the world is off the reading list.</p></div>
+<div class="c"><span class="n">05</span><h3>Smooth Gameplay &amp; Service</h3><p>Our map games follow clear rules, and help is easy to find when you need it.</p></div>
+<div class="c"><span class="n">06</span><h3>Premium Feel, Smooth Play</h3><p>Clean maps and tidy pages make learning feel effortless.</p></div>
+<div class="c"><span class="n">07</span><h3>Bring Everyone Together</h3><p>Students, parents and teachers can read the same lessons and share the same words.</p></div>
+<div class="c"><span class="n">08</span><h3>Everything organized.</h3><p>Lessons are grouped by region, topic and length, so you can find a starting point quickly.</p></div>
+<div class="c"><span class="n">09</span><h3>Experience Quality That Speaks for Itself.</h3><p>Each article is written in plain language and checked against reliable sources.</p></div>
+<div class="c"><span class="n">10</span><h3>Safe &amp; Secure</h3><p>We explain how to protect your documents, money and personal data while travelling.</p></div>
+<div class="c"><span class="n">11</span><h3>Incredible Fun And More</h3><p>Learning about animals, landscapes and cultures is full of surprises.</p></div>
+<div class="c"><span class="n">12</span><h3>Breathtaking Experience</h3><p>Our lessons describe natural wonders, from glaciers to coral reefs, in vivid detail.</p></div>
+</div>
+<p class="note" style="margin-top:28px"><b>Smooth Gameplay Experience</b> in a map quiz starts with simple, fair rules.</p>
+</section>
+
+<section id="together">
+<h2>Bring Everyone Together</h2>
+<p class="sub">Bovano is written so that learners of every age can read along.</p>
+<div class="grid">
+<div class="c"><h3>For students</h3><p>Clear explanations of maps, climates and countries that support school lessons.</p></div>
+<div class="c"><h3>For families</h3><p>Stories and facts to read together before a trip or just for curiosity.</p></div>
+<div class="c"><h3>For teachers</h3><p>Ready-to-use summaries of core geography ideas for any classroom.</p></div>
+</div>
+</section>
+
+<section id="wonder">
+<h2>Creating a Magical Atmosphere</h2>
+<p class="sub">Some places simply fill us with wonder, and understanding them makes the wonder greater.</p>
+<div class="grid">
+<div class="c"><h3>Skies that glow</h3><p>The northern lights appear when charged particles from the Sun meet gases in Earth's upper atmosphere near the poles.</p></div>
+<div class="c"><h3>Living reefs</h3><p>Coral reefs cover a very small part of the ocean floor but are home to roughly a quarter of all marine species.</p></div>
+<div class="c"><h3>Ancient ice</h3><p>Glaciers store a large share of the world's fresh water and shape the valleys below them.</p></div>
+</div>
+</section>
+
+<section id="steps">
+<h2>How to plan a journey</h2>
+<p class="sub">New chapter of luck begins now, and so does careful planning. Four steps to prepare well.</p>
+<div class="steps">
+<div class="step"><div><h3>Choose a destination</h3><p>Read about its geography, climate and local customs before you decide.</p></div></div>
+<div class="step"><div><h3>Check official information</h3><p>Look up entry rules, health advice and travel notices from your government's official website.</p></div></div>
+<div class="step"><div><h3>Prepare your documents</h3><p>Keep digital and paper copies of your passport, tickets and insurance in separate places.</p></div></div>
+<div class="step"><div><h3>Learn the basics</h3><p>A few words of the local language and a good map go a long way.</p></div></div>
+</div>
+</section>
+
+<section id="articles">
+<h2>The Bovano reading room</h2>
+<p class="sub">Longer pieces for those who like to understand the details.</p>
+<div class="art"><span class="tag">Article · 6 min</span><h3>Why maps never look quite right</h3><p>Earth is a sphere, and a flat map must stretch or squeeze it somewhere. The result is called a projection, and every projection distorts something: shape, area, distance or direction.</p><p>The Mercator map, published by Gerardus Mercator in 1569, keeps directions true, which helped sailors. However, it makes regions near the poles look much larger than they are. On that map Greenland appears about as big as Africa, yet Africa is roughly fourteen times larger.</p></div>
+<div class="art"><span class="tag">Article · 5 min</span><h3>How time zones came to be</h3><p>The Earth turns once about every 24 hours, so noon arrives at different moments in different places. In 1884, delegates at the International Meridian Conference in Washington, D.C. chose the meridian passing through Greenwich, England as the prime meridian.</p><p>That choice became the starting point for measuring longitude and for the system of world time zones used today.</p></div>
+<div class="art"><span class="tag">Article · 5 min</span><h3>The science behind the northern lights</h3><p>The aurora forms when charged particles from the Sun are guided by Earth's magnetic field toward the polar regions. There they collide with gases in the upper atmosphere and release light. Oxygen can produce green and red glows, while nitrogen can add blue and purple tones.</p><p>The best viewing is usually on dark, clear winter nights in places such as northern Norway, Iceland, Finland, Canada and Alaska.</p></div>
+<div class="art"><span class="tag">Article · 5 min</span><h3>Coral reefs: small area, large impact</h3><p>The Great Barrier Reef off the coast of Queensland, Australia, stretches for about 2,300 kilometres. Reefs like it provide shelter for fish, protect coastlines from waves and support millions of people through fishing and tourism.</p><p>Reefs are sensitive to rising water temperatures, which is why scientists monitor them closely.</p></div>
+<div class="art"><span class="tag">Article · 5 min</span><h3>Safe &amp; Secure: travel basics</h3><p>Good habits make travel calmer. Share your plans with someone you trust, keep copies of important documents, and carry only the cash and cards you need.</p><p>Online, use strong and different passwords, turn on two-step verification, and avoid logging in to banking or email accounts on public Wi-Fi unless the connection is protected.</p></div>
+</section>
+
+<section id="glossary">
+<h2>Geography terms, explained</h2>
+<p class="sub">Words you will meet often, in simple language.</p>
+<dl>
+<dt>Latitude</dt><dd>How far a place is north or south of the equator, measured in degrees.</dd>
+<dt>Longitude</dt><dd>How far a place is east or west of the prime meridian, measured in degrees.</dd>
+<dt>Prime meridian</dt><dd>The line of 0° longitude, which passes through Greenwich, England.</dd>
+<dt>Projection</dt><dd>A method of showing the round Earth on a flat map.</dd>
+<dt>Time zone</dt><dd>A region that keeps the same standard time.</dd>
+<dt>Ecosystem</dt><dd>A community of living things and the environment they share.</dd>
+</dl>
+</section>
+
+<section id="faq">
+<h2>Questions, answered</h2>
+<p class="sub">Short answers to common questions.</p>
+<details><summary>Do I need any background to read Bovano?</summary><p>No. Every lesson starts from the basics and uses plain language.</p></details>
+<details><summary>How long are the readings?</summary><p>Most take between four and six minutes.</p></details>
+<details><summary>Can I read on my phone?</summary><p>Yes. The pages adjust to phones, tablets and computers.</p></details>
+<details><summary>Are the facts in the articles reliable?</summary><p>Yes. The articles describe well-established facts and avoid popular myths.</p></details>
+</section>
+
+<section style="text-align:center">
+<h2>Your Next Big Upgrade Awaits.</h2>
+<p class="sub">Start Today – Thank Yourself Tomorrow.</p>
+<p class="note"><b>Try it out today and you’ll never Disappoint</b></p>
+<p class="note"><b>Act fast – limited time, unlimited value.</b><br>Shop now and enjoy instant rewards.</p>
+<p style="margin-top:24px"><a class="btn" href="#features">Begin Your Journey</a><a class="btn o" href="#together">Join the Movement.</a></p>
+<p class="note" style="margin-top:22px">Click. Discover. Enjoy.</p>
+</section>
+
+<footer>© 2026 Bovano · Experience excellence without compromise.</footer>
+</div>
+</body>
+</html>
